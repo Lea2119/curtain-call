@@ -1,0 +1,250 @@
+.prices-container {
+  /* background-color: pink;  */
+  width: 100%;
+}
+
+.prices-container button {
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.prices {
+  /* background-color: green; */
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* border: 1px solid black; */
+}
+
+.prices h1 {
+  margin-bottom: 50px;
+  /* background-color: pink; */
+}
+
+.paiement-container {
+  display: flex;
+  flex-direction: column;
+  /* background-color: green; */
+}
+
+.prices {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.prices ul {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  width: 50%;
+  justify-content: space-between;
+  align-content: center;
+  text-transform: uppercase;
+  /* background-color: red; */
+}
+
+.prices li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 150px;
+  /* background-color: green; */
+}
+
+.basket {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.basket img {
+  height: 200px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.basket p {
+  margin-bottom: 5px;
+}
+
+.basket ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.basket li {
+  line-height: 2rem;
+}
+
+.basket button {
+  margin-top: 10px;
+  padding: 20px 30px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.basket button:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+
+.pay {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pay button {
+  margin-top: 10px;
+  padding: 20px 30px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pay button:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+
+.counter button {
+  text-align: center;
+  background-color: transparent;
+  /* border: 1px solid black; */
+  border: none;
+  font-size: 1.5rem;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.counter span {
+  /* background-color: blue; */
+  background-color: gainsboro;
+  font-size: 1rem;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .prices {
+    min-height: auto;
+  }
+
+  .prices ul {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .counter button {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .counter span {
+    /* background-color: blue; */
+    background-color: gainsboro;
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  .basket {
+    min-height: auto;
+  }
+
+  .basket img {
+    height: auto;
+    width: 100%;
+  }
+
+  .basket ul {
+    text-align: left;
+  }
+
+  .pay {
+    min-height: auto;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .prices {
+    min-height: auto;
+  }
+
+  .prices ul {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .counter button {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .counter span {
+    /* background-color: blue; */
+    background-color: gainsboro;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 515px) {
+  .prices {
+    min-height: auto;
+  }
+
+  .prices ul {
+    width: 100%;
+    padding: 10px;
+  }
+
+  ul .list-info {
+    display: none;
+  }
+
+  .counter button {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .counter span {
+    /* background-color: blue; */
+    background-color: gainsboro;
+    font-size: 1rem;
+  }
+}

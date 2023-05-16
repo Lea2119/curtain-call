@@ -1,0 +1,85 @@
+.hero {
+  height: 500px;
+}
+
+.mySwiper {
+  max-height: 600px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.swiper-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.slide-text {
+  position: absolute;
+  top: 50px;
+  left: 75px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .slide-text {
+    top: 40px;
+    left: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .slide-text {
+    top: 30px;
+    left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+
+  .mySwiper {
+    max-height: 400px;
+  }
+
+  .slide-text {
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: auto;
+  }
+
+  .mySwiper {
+    max-height: none;
+  }
+
+  .swiper-image {
+    height: auto;
+  }
+
+  .slide-text {
+    top: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,34 @@
+.sort {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  /* background-color: blue; */
+  width: 100vw;
+}
+
+.sort h1 {
+  width: 200px;
+  padding: 20px 10px;
+  font-size: 29px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 98, 171, 0) 50%,
+    rgb(255, 68, 68) 1%
+  );
+}
+
+@media (max-width: 768px) {
+  .sort h1 {
+    width: 150px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sort h1 {
+    width: 120px;
+    font-size: 20px;
+  }
+}

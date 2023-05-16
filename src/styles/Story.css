@@ -1,0 +1,29 @@
+.story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.story-content h1 {
+  margin-bottom: 100px;
+}
+
+.story-content {
+  /* background-color: red; */
+  width: 60%;
+}
+
+.story p {
+  text-align: justify;
+  line-height: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .story-content {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}

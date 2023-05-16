@@ -1,0 +1,61 @@
+.checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group {
+  height: 100px;
+  width: 500px;
+  /* border: 1px solid black; */
+}
+
+#cardNumber {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.error {
+  background-color: #ef798a;
+  width: 300px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.success {
+  background-color: #b9fbc0;
+  color: green;
+  width: 300px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 965px) {
+  .checkout {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form-group {
+    width: 90%;
+  }
+
+  #cardNumber {
+    width: 100%;
+  }
+
+  .error,
+  .success {
+    width: 90%;
+  }
+
+  .checkout {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}

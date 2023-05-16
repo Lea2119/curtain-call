@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100vw;
+}
+
+.membership h1 {
+  text-align: center;
+  background-color: green;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 98, 171, 0) 50%,
+    rgb(255, 68, 68) 1%
+  );
+}

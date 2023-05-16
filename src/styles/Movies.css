@@ -1,0 +1,43 @@
+.movies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  /* background-color: red; */
+  width: 100vw;
+}
+
+.movies-items {
+  height: 90%;
+  width: 90%;
+  padding: 20px;
+  /* background-color: green; */
+  display: grid;
+  grid-row-gap: 2vw;
+  grid-column-gap: 2vw;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+@media only screen and (min-width: 670px) and (max-width: 1024px) {
+  .movies-items {
+    height: 90%;
+    width: 90%;
+    /* background-color: blue; */
+    gap: 2vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 650px) {
+  .movies-items {
+    height: 90%;
+    width: 90%;
+    /* background-color: blue; */
+    gap: 4vw;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+}

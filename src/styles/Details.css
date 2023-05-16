@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-container {
+  width: 95%;
+}
+
+.details-shop {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.details-booking {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+.details-shop ul {
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.details-shop li {
+  padding: 5px;
+}
+
+.details-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.details-body {
+  display: flex;
+  justify-content: center;
+}
+
+.details-resume {
+  width: 45%;
+  text-align: justify;
+  line-height: 2;
+}
+
+.details-trailer {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .details-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .details-shop {
+    width: 100%;
+  }
+
+  .details-booking {
+    width: 100%;
+  }
+
+  .details-resume {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .details-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .details-booking {
+    width: 100%;
+  }
+
+  .details-resume {
+    width: 100%;
+  }
+}

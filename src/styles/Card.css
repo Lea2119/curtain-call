@@ -1,0 +1,23 @@
+.card {
+  max-width: 100%;
+  height: auto;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgb(200, 200, 200);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.card-img {
+  height: 200px;
+  width: 100%;
+  /* background-color: cadetblue; */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 6px solid #ff4444;
+}
+
+.card-link {
+  text-decoration: none;
+  color: black;
+}
