@@ -91,7 +91,7 @@ const Landing = () => {
 
   return (
     <div className="landing">
-      <h1>THE CURTAIN CALL</h1>
+      <h1>CURTAIN CALL THEATER</h1>
       <button onClick={handleClick}>ENTER SITE</button>
       <Curtain isVisible={isCurtainVisible} />
     </div>
