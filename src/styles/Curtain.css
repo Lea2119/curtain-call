@@ -1,0 +1,30 @@
+.curtain {
+  user-select: none;
+}
+
+.color-1,
+.color-2,
+.color-3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transform-origin: top;
+  will-change: transform;
+}
+
+.color-1 {
+  z-index: 999;
+  background-color: rgb(249, 62, 62);
+}
+
+.color-2 {
+  z-index: 998;
+  background-color: #fedbc4;
+}
+
+.color-3 {
+  z-index: 997;
+  background-color: black;
+}

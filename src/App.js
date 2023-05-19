@@ -1,20 +1,21 @@
-import "./App.css";
-import "@stripe/stripe-js";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Movie from "./pages/Movie";
 import Paiement from "./pages/Paiement";
-import { useState } from "react";
 import Story from "./pages/Story";
+import Landing from "./pages/Landing";
+import Curtain from "./Components/Curtain";
 
 function App() {
   const [cart, updateCart] = useState([]);
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Landing />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/movies/:id" element={<Movie />} />
           <Route
             path="/book/:id"
@@ -23,8 +24,9 @@ function App() {
             element={<Paiement />}
           />
           <Route path="/our-story" element={<Story />} />
+          <Route path="/curtain" element={<Curtain />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }

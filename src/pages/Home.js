@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="home">
       <Navigation />
-      <Hero />
+      {/* <Hero /> */}
       <Sort />
       <Movies />
 

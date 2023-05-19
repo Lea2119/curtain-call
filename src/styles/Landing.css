@@ -1,0 +1,49 @@
+.landing {
+  background-color: rgb(249, 62, 62);
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.color-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transform-origin: top;
+  will-change: transform;
+}
+
+.color-1 {
+  z-index: 999;
+  background-color: rgb(239, 56, 56);
+}
+
+.color-2 {
+  z-index: 999;
+  background-color: black;
+}
+
+.color-3 {
+  z-index: 999;
+  background-color: white;
+}
+
+.landing p {
+  font-size: 24px;
+  color: white;
+  z-index: 2;
+}
+
+.landing button {
+  background-color: black;
+  border: none;
+  width: 220px;
+  padding: 20px;
+  color: white;
+}
