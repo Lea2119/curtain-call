@@ -38,3 +38,27 @@
   background-clip: text;
   color: transparent;
 }
+
+@media (max-width: 1350px) {
+  .landing h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 615px) {
+  .landing h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .landing h1 {
+    font-size: 2rem;
+  }
+}
