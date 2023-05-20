@@ -1,20 +1,10 @@
+.trailer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .trailer iframe {
-  width: 700px;
+  width: 80%;
   height: 400px;
-}
-
-@media (max-width: 768px) {
-  .trailer iframe {
-    width: 300px;
-    height: 200px;
-    padding-bottom: 0;
-  }
-}
-
-@media (max-width: 375px) {
-  .trailer iframe {
-    width: 250px;
-    height: 150px;
-    padding-bottom: 0;
-  }
 }

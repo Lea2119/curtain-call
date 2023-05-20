@@ -1,5 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { NavLink } from "react-router-dom";
+
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -19,14 +21,33 @@ const Hero = () => {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>AFTERSUN</SwiperSlide>
-        <SwiperSlide>VERMEER</SwiperSlide>
-        <SwiperSlide>PARALLEL MOTHERS</SwiperSlide>
-        <SwiperSlide>ALCARRAS</SwiperSlide>
-        <SwiperSlide>LIVING</SwiperSlide>
-        <SwiperSlide>ONE FINE MORNING</SwiperSlide>
-        <SwiperSlide>FULL TIME</SwiperSlide>
-        <SwiperSlide>FIRE OF LOVE</SwiperSlide>
+        <SwiperSlide>
+          <NavLink to={"/movies/2ab"}>
+            <p>AFTERSUN</p>
+          </NavLink>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <NavLink to={"/movies/3ab"}>
+            <p>VERMEER</p>
+          </NavLink>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <NavLink to={"/movies/1ed"}>
+            <p>PARALLEL MOTHERS</p>
+          </NavLink>
+        </SwiperSlide>
+        <SwiperSlide>
+          <NavLink to={"/movies/7ab"}>
+            <p>ALCARRAS</p>
+          </NavLink>
+        </SwiperSlide>
+        <SwiperSlide>
+          <NavLink to={"/movies/12ab"}>
+            <p>FIRE OF LOVE</p>
+          </NavLink>
+        </SwiperSlide>
       </Swiper>
     </>
   );

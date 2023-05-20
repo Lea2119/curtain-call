@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 .navigation {
   display: flex;
@@ -32,21 +33,29 @@
 
 .nav-container a {
   text-decoration: none;
-  margin-left: 10px;
+  margin-left: 20px;
   font-size: 1.8rem;
+  font-weight: 600;
   color: black;
+}
+
+.nav-container a:nth-child(2),
+.nav-container a:nth-child(3) {
+  border-bottom: 2px solid black;
+  padding-bottom: 4px;
 }
 
 .logo {
   display: flex;
   justify-content: flex-start;
   flex-grow: 1;
-  font-family: "Bebas Neue", cursive;
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
 }
 
 .logo p {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 768px) {
@@ -82,6 +91,6 @@
   }
 
   .logo p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }

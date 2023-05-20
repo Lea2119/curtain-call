@@ -12,15 +12,8 @@ const Navigation = () => {
               <p>Curtain Call Theater</p>
             </li>
           </NavLink>
-          <NavLink to="">
-            <li>
-              <p>WHAT'S ON</p>
-            </li>
-          </NavLink>
           <NavLink to="/our-story">
-            <li>
-              <p>OUR STORY</p>
-            </li>
+            <li>OUR STORY</li>
           </NavLink>
         </ul>
       </nav>

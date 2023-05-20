@@ -11,7 +11,6 @@
 }
 
 .prices {
-  /* background-color: green; */
   background-color: white;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -20,13 +19,16 @@
   justify-content: center;
   align-content: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-  /* border: 1px solid black; */
 }
 
-.prices h1 {
-  margin-bottom: 50px;
-  /* background-color: pink; */
+.prices h1,
+.basket h1 {
+  margin-bottom: 40px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 98, 171, 0) 50%,
+    rgb(255, 68, 68) 1%
+  );
 }
 
 .paiement-container {
@@ -36,7 +38,6 @@
 }
 
 .prices {
-  /* background-color: blue; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,6 +45,7 @@
 }
 .prices ul {
   display: flex;
+  font-weight: 500;
   padding: 0px;
   margin: 0px;
   width: 50%;
@@ -77,8 +79,8 @@
 }
 
 .basket img {
-  height: 200px;
-  width: 250px;
+  height: 350px;
+  width: 450px;
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 10px;

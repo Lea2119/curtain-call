@@ -30,7 +30,7 @@ const colorVariant = {
   end: {
     scaleY: 1,
     transition: {
-      duration: 1,
+      duration: 0.2,
       ease: "easeInOut",
     },
   },
@@ -73,7 +73,7 @@ const Landing = () => {
       setIsCurtainVisible(true);
       setTimeout(() => {
         navigate("/home");
-      }, 1000);
+      }, 900);
     }
   }, [isButtonClicked, navigate]);
 

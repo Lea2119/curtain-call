@@ -20,7 +20,6 @@ const Details = ({
     <div className="details">
       <div className="details-container">
         <div className="details-shop">
-          {/* <h1>SLOTS</h1> */}
           <div className="details-booking">
             <Booking
               slots={slots}
@@ -38,7 +37,6 @@ const Details = ({
           </div>
         </div>
         <div className="details-trailer">
-          {/* <h1>TRAILER</h1> */}
           <div className="trailer-body">
             <div className="details-trailer">
               <Trailer trailer={trailer} />

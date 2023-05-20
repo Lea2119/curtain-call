@@ -33,7 +33,7 @@ const Prices = ({ prices, cover, name }) => {
   return (
     <div className="prices-container">
       <div className="prices">
-        {/* <h1>BOOK YOUR TICKET</h1> */}
+        <h1>BOOK YOUR TICKET</h1>
         {prices.map((price, index) => (
           <ul key={index}>
             <li className="list-price">{`${price.value}$`}</li>
@@ -48,7 +48,7 @@ const Prices = ({ prices, cover, name }) => {
       </div>
       <div className="paiement-container">
         <div className="basket">
-          {/* <h1>YOUR BASKET</h1> */}
+          <h1>YOUR BASKET</h1>
           {basket.length > 0 ? (
             <>
               <div className="booking-infos">

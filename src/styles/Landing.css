@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 .landing {
   background-color: rgb(249, 62, 62);
@@ -18,12 +18,11 @@
   height: 100vh;
   width: 100vw;
   transform-origin: top;
-  will-change: transform;
 }
 
 .landing h1 {
-  font-size: 10rem;
-  font-family: "Fjalla One", sans-serif;
+  font-size: 8rem;
+  font-family: "Anton", sans-serif;
   width: 100%;
 }
 
@@ -32,7 +31,7 @@
 }
 
 .button-wrapper {
-  background-image: url("../assets/manos-gkikas-pPA5ActWLLI-unsplash.jpg");
+  background-image: url("../assets/pexels-dmitry-demidov-3921045.jpg");
   background-position: center;
   background-size: cover;
   background-clip: text;
