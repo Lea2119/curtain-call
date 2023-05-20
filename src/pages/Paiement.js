@@ -12,7 +12,6 @@ const Paiement = () => {
   return (
     <div className="paiement">
       <Navigation />
-      {/* <h1>Hello, movie {id}!</h1> */}
       <Prices
         id={movie.id}
         name={movie.name}

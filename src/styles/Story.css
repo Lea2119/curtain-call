@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: aqua; */
 }
 
 .story-content h1 {
@@ -11,8 +10,7 @@
 }
 
 .story-content {
-  /* background-color: red; */
-  width: 60%;
+  width: 80%;
 }
 
 .story p {
