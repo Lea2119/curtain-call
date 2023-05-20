@@ -60,7 +60,7 @@ const Prices = ({ prices, cover, name }) => {
                 {/* <p>Total Price: ${totalPrice.toFixed(2)}</p> */}
                 <ul>
                   {basket.map((item, index) => (
-                    <li key={index}>{`1 X ${item.info} ${item.value}$`}</li>
+                    <li key={index}>{`1 X ${item.info} ${item.value}£`}</li>
                   ))}
                 </ul>
               </div>

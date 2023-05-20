@@ -79,7 +79,7 @@ const CheckoutForm = ({ basket, calculateTotalPrice }) => {
           <label>CVC</label>
           <CardCvcElement options={{ style: inputStyle }} />
         </div>
-        <button type="submit">PAY {calculateTotalPrice()} $</button>
+        <button type="submit">PAY {calculateTotalPrice()} £</button>
       </form>
     </div>
   );
