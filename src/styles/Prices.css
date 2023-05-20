@@ -71,7 +71,6 @@
   justify-content: center;
   align-items: center;
   background-color: white;
-  border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
@@ -120,6 +119,7 @@
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 20px;
   min-height: 500px;
   display: flex;
   justify-content: center;
@@ -131,6 +131,7 @@
 .pay button {
   margin-top: 10px;
   padding: 20px 30px;
+  width: 100%;
   background-color: black;
   color: #fff;
   border: none;
@@ -156,7 +157,8 @@
 
 .counter span {
   /* background-color: blue; */
-  background-color: gainsboro;
+  background-color: black;
+  color: white;
   font-size: 1rem;
   padding: 20px;
 }
@@ -178,7 +180,6 @@
 
   .counter span {
     /* background-color: blue; */
-    background-color: gainsboro;
     font-size: 1rem;
     padding: 20px;
   }
@@ -218,7 +219,6 @@
 
   .counter span {
     /* background-color: blue; */
-    background-color: gainsboro;
     font-size: 1rem;
   }
 }
@@ -244,7 +244,6 @@
 
   .counter span {
     /* background-color: blue; */
-    background-color: gainsboro;
     font-size: 1rem;
   }
 }

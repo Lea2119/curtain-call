@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Prices.css";
 import Checkout from "./Checkout";
-import Footer from "./Footer";
 
 const Prices = ({ prices, cover, name }) => {
   const [basket, setBasket] = useState([]);

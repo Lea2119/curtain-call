@@ -5,7 +5,6 @@ import Movie from "./pages/Movie";
 import Paiement from "./pages/Paiement";
 import Story from "./pages/Story";
 import Landing from "./pages/Landing";
-import Curtain from "./Components/Curtain";
 
 function App() {
   const [cart, updateCart] = useState([]);
@@ -24,7 +23,6 @@ function App() {
             element={<Paiement />}
           />
           <Route path="/our-story" element={<Story />} />
-          <Route path="/curtain" element={<Curtain />} />
         </Routes>
       </Router>
     </div>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
 .landing {
   background-color: rgb(249, 62, 62);
   display: flex;
@@ -20,15 +22,19 @@
 }
 
 .landing h1 {
-  font-size: 5rem;
-  color: black;
-  z-index: 2;
+  font-size: 10rem;
+  font-family: "Fjalla One", sans-serif;
+  width: 100%;
 }
 
-.landing button {
-  background-color: black;
-  border: none;
-  width: 220px;
-  padding: 20px;
-  color: white;
+.button:hover {
+  cursor: pointer;
+}
+
+.button-wrapper {
+  background-image: url("../assets/manos-gkikas-pPA5ActWLLI-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
 }

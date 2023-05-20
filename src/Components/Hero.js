@@ -1,74 +1,34 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
+import "swiper/css/pagination";
+
 import "../styles/Hero.css";
-import "swiper/css/navigation";
+
+import { Pagination } from "swiper";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <>
       <Swiper
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
+        slidesPerView={"auto"}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
         }}
-        navigation={true}
-        modules={[Autoplay, Navigation]}
+        modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <div className="image-container">
-            <div className="slide-text">AFTERSUN</div>
-            <img
-              src={require("../assets/hero/aftersun.webp")}
-              alt=""
-              className="swiper-image"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="image-container">
-            <div className="slide-text">FIRE OF LOVE</div>
-            <img
-              src={require("../assets/hero/fire-of-love-1-e1657537846309-1568x752.jpg")}
-              alt=""
-              className="swiper-image"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="image-container">
-            <div className="slide-text">Vermeer: The Greatest Exhibition</div>
-            <img
-              src={require("../assets/hero/Website_Header_Vermeer_-2496×1266px.jpg")}
-              alt=""
-              className="swiper-image"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="image-container">
-            <div className="slide-text">ONE FINE MORNING</div>
-            <img
-              src={require("../assets/hero/08one-fine-morning-review2-1-0824-videoSixteenByNine3000-v3.jpg")}
-              alt=""
-              className="swiper-image"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="image-container">
-            <div className="slide-text">LIVING</div>
-            <img
-              src={require("../assets/hero/08one-fine-morning-review2-1-0824-videoSixteenByNine3000-v3.jpg")}
-              alt=""
-              className="swiper-image"
-            />
-          </div>
-        </SwiperSlide>
+        <SwiperSlide>AFTERSUN</SwiperSlide>
+        <SwiperSlide>VERMEER</SwiperSlide>
+        <SwiperSlide>PARALLEL MOTHERS</SwiperSlide>
+        <SwiperSlide>ALCARRAS</SwiperSlide>
+        <SwiperSlide>LIVING</SwiperSlide>
+        <SwiperSlide>ONE FINE MORNING</SwiperSlide>
+        <SwiperSlide>FULL TIME</SwiperSlide>
+        <SwiperSlide>FIRE OF LOVE</SwiperSlide>
       </Swiper>
-    </div>
+    </>
   );
 };
 

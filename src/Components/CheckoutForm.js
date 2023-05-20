@@ -1,11 +1,18 @@
 import React, { useState } from "react";
-import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
+import {
+  CardNumberElement,
+  CardExpiryElement,
+  CardCvcElement,
+  useStripe,
+  useElements,
+} from "@stripe/react-stripe-js";
 import "../styles/CheckoutForm.css";
 
 const CheckoutForm = ({ basket, calculateTotalPrice }) => {
   const stripe = useStripe();
   const elements = useElements();
   const [paymentStatus, setPaymentStatus] = useState(null);
+  const [cardType, setCardType] = useState("");
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -14,7 +21,7 @@ const CheckoutForm = ({ basket, calculateTotalPrice }) => {
       return;
     }
 
-    const cardElement = elements.getElement(CardElement);
+    const cardElement = elements.getElement(CardNumberElement);
 
     const { error, paymentMethod } = await stripe.createPaymentMethod({
       type: "card",
@@ -31,6 +38,22 @@ const CheckoutForm = ({ basket, calculateTotalPrice }) => {
     setPaymentStatus("success");
   };
 
+  const inputStyle = {
+    iconColor: "#c4f0ff",
+    color: "#ff0",
+    fontWeight: "500",
+    fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
+    fontSize: "16px",
+    fontSmoothing: "antialiased",
+    "::placeholder": {
+      color: "#87BBFD",
+    },
+  };
+
+  const handleCardChange = (event) => {
+    setCardType(event.brand);
+  };
+
   return (
     <div className="checkout">
       <h1>CHECKOUT</h1>
@@ -42,22 +65,19 @@ const CheckoutForm = ({ basket, calculateTotalPrice }) => {
       )}
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <CardElement
-            id="cardNumber"
-            options={{
-              hidePostalCode: true,
-              style: {
-                base: {
-                  fontSize: "16px",
-                  color: "#424770",
-                  backgroundColor: "white",
-                  "::placeholder": {
-                    color: "#aab7c4",
-                  },
-                },
-              },
-            }}
+          <label>Card Number</label>
+          <CardNumberElement
+            options={{ style: inputStyle }}
+            onChange={handleCardChange}
           />
+        </div>
+        <div className="form-group">
+          <label>Expiration Date</label>
+          <CardExpiryElement options={{ style: inputStyle }} />
+        </div>
+        <div className="form-group">
+          <label>CVC</label>
+          <CardCvcElement options={{ style: inputStyle }} />
         </div>
         <button type="submit">PAY {calculateTotalPrice()} $</button>
       </form>

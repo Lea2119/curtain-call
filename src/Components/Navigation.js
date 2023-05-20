@@ -1,8 +1,6 @@
 import React from "react";
 import "../styles/Navigation.css";
 import { NavLink } from "react-router-dom";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faTicketSimple } from '@fortawesome/free-solid-svg-icons'
 
 const Navigation = () => {
   return (
@@ -24,11 +22,6 @@ const Navigation = () => {
               <p>OUR STORY</p>
             </li>
           </NavLink>
-          {/* <NavLink to="">
-            <li>
-              <p>BASKET</p>
-            </li>
-          </NavLink> */}
         </ul>
       </nav>
     </div>
