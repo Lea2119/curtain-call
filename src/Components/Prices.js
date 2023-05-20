@@ -20,7 +20,7 @@ const Prices = ({ prices, cover, name }) => {
     setBasket(updatedBasket);
     setTotalQuantity((prevTotalQuantity) => prevTotalQuantity - 1);
     setTotalPrice(
-      (prevTotalPrice) => prevTotalPrice - Number(item.value.replace("$", ""))
+      (prevTotalPrice) => prevTotalPrice - Number(item.value.replace("£", ""))
     );
   };
 
@@ -36,7 +36,7 @@ const Prices = ({ prices, cover, name }) => {
         <h1>BOOK YOUR TICKET</h1>
         {prices.map((price, index) => (
           <ul key={index}>
-            <li className="list-price">{`${price.value}$`}</li>
+            <li className="list-price">{`${price.value}£`}</li>
             <li className="list-info">{price.info}</li>
             <div className="counter">
               <button onClick={() => handleDecrement(price)}>-</button>
