@@ -61,7 +61,7 @@ export const movies = [
     paiement: "/book/3ab",
     description:
       "In the spring of 2023, the Rijksmuseum in Amsterdam opened its doors to the largest Vermeer exhibition in history. The show sold out within days of going on sale. This film offers you the chance to experience the once-in-a-lifetime exhibition on the big screen.",
-    trailer: "https://www.youtube.com/embed/cL6JDYkRa2g",
+    trailer: "https://www.youtube.com/embed/1h_PYGlBnNo",
     slots: ["Wed 03", "Thur 04", "Fri 04"],
     times: ["14:00", "17:15", "20:30"],
     prices: [
@@ -79,8 +79,8 @@ export const movies = [
     link: "/movies/4ab",
     paiement: "/book/4ab",
     description:
-      "Two women, Janis and Ana, coincide in a hospital room where they are going to give birth. Both are single and became pregnant by accident. Janis, middle-aged, doesn't regret it and she is exultant. The other, Ana, an adolescent, is scared, repentant and traumatized. Janis tries to encourage her while they move like sleepwalkers along the hospital corridors. The few words they exchange in these hours will create a very close link between the two, which by chance develops and complicates, and changes their lives in a decisive way",
-    trailer: "https://www.youtube.com/embed/cL6JDYkRa2g",
+      "In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand (Michael Caine), a brilliant NASA physicist, is working on plans to save mankind by transporting Earth's population to a new home via a wormhole. But first, Brand must send former NASA pilot Cooper (Matthew McConaughey) and a team of researchers through the wormhole and across the galaxy to find out which of three planets could be mankind's new home.",
+    trailer: "https://www.youtube.com/embed/zSWdZVtXT7E",
     slots: ["Wed 03", "Thur 04", "Fri 04"],
     times: ["14:00", "17:15", "20:30"],
     prices: [
@@ -98,8 +98,8 @@ export const movies = [
     link: "/movies/5ab",
     paiement: "/book/5ab",
     description:
-      "Two women, Janis and Ana, coincide in a hospital room where they are going to give birth. Both are single and became pregnant by accident. Janis, middle-aged, doesn't regret it and she is exultant. The other, Ana, an adolescent, is scared, repentant and traumatized. Janis tries to encourage her while they move like sleepwalkers along the hospital corridors. The few words they exchange in these hours will create a very close link between the two, which by chance develops and complicates, and changes their lives in a decisive way",
-    trailer: "https://www.youtube.com/embed/cL6JDYkRa2g",
+      "Filmmaker Tony Silver profiles New Yorkers who practice break dancing and graffiti.",
+    trailer: "https://www.youtube.com/embed/sR9qdaMKl6c",
     slots: ["Wed 03", "Thur 04", "Fri 04"],
     times: ["14:00", "17:15", "20:30"],
     prices: [
@@ -119,8 +119,8 @@ export const movies = [
     link: "/movies/6ab",
     paiement: "/book/6ab",
     description:
-      "Two women, Janis and Ana, coincide in a hospital room where they are going to give birth. Both are single and became pregnant by accident. Janis, middle-aged, doesn't regret it and she is exultant. The other, Ana, an adolescent, is scared, repentant and traumatized. Janis tries to encourage her while they move like sleepwalkers along the hospital corridors. The few words they exchange in these hours will create a very close link between the two, which by chance develops and complicates, and changes their lives in a decisive way",
-    trailer: "https://www.youtube.com/embed/cL6JDYkRa2g",
+      "AIR reveals the unbelievable game-changing partnership between a then-rookie Michael Jordan and Nike's fledgling basketball division which revolutionized the world of sports and contemporary culture with the Air Jordan brand. This moving story follows the career-defining gamble of an unconventional team with everything on the line, the uncompromising vision of a mother who knows the worth of her son’s immense talent, and the basketball phenom who would become the greatest of all time.",
+    trailer: "https://www.youtube.com/embed/Euy4Yu6B3nU",
     slots: ["Wed 03", "Thur 04", "Fri 04"],
     times: ["14:00", "17:15", "20:30"],
     prices: [
