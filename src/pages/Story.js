@@ -7,7 +7,7 @@ const Story = () => {
     <div className="story">
       <Navigation />
       <div className="story-content">
-        <h1>OUR STORY</h1>
+        {/* <h1>OUR STORY</h1> */}
         <p>
           Welcome to The Curtain Call, where we bring the magic of cinema to
           life! As a premier destination for movie lovers, we are passionate
